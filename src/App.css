@@ -1,0 +1,72 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #02030b;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 4px;
+}
+
+.app {
+  min-height: 100vh;
+  background: #02030b;
+}
+
+.next-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+  color: #f8f6ff;
+  background:
+    radial-gradient(ellipse at center, #25104a, transparent 55%),
+    #02030b;
+  font-family: Arial, sans-serif;
+}
+
+.next-screen p:first-child {
+  color: #22d3ee;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+}
+
+.next-screen h1 {
+  font-size: clamp(30px, 6vw, 60px);
+  color: #d8a5ff;
+}
+
+.next-screen p {
+  color: #a5a7c8;
+}
+
+.next-screen button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: 1px solid #a855f7;
+  border-radius: 30px;
+  color: white;
+  background: #30135b;
+  cursor: pointer;
+}
